@@ -1,0 +1,374 @@
+//  Media Queires
+
+// Tablet
+
+@media only screen and (max-width: 768px) {
+
+
+    // home
+    // Nav
+
+    .nav__header__social {
+        display: none;
+    }
+
+    .instagram {
+        display: none;
+    }
+
+    .nav__header__content {
+        width: 80%;
+        margin-right: 40px;
+    }
+
+    .nav__header__content>a {
+        font-size: 20px;
+    }
+
+    //  Home Hero
+
+    .hero {
+        padding: 100px;
+        justify-content: center;
+    }
+
+    //  Main container
+
+    .container {
+        flex-direction: column;
+    }
+
+    // Sub container
+
+    .sub-container {
+        width: 80%;
+    }
+
+    .sub-header {
+        font-size: 3rem;
+    }
+
+    .sub-header__cover {
+        font-size: 3rem;
+    }
+
+    .container__checker-box {
+        padding-left: 20px;
+    }
+
+
+    .container__image__card {
+        width: 80%;
+    }
+
+    // Testimonal
+
+    .testimonal__card {
+        width: 40%;
+    }
+
+    .email-input {
+        display: none;
+    }
+
+    // .sign-up {
+    //     display: none;
+    // }
+
+    .body-text,
+    .body-text__bold-text {
+        font-size: 16px;
+    }
+
+    .hero__buttons>a {
+        font-size: 20px;
+    }
+
+    // Footer
+
+    .footer-container {
+        // flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer__social {
+        display: none;
+    }
+
+    // End of home
+
+    // Reservation
+
+    // hero
+
+    .hero-header, #hero__cover, #hero__drop {
+        font-size: 100px;
+    }
+
+    .reservation-hero {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .reservation-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left__reservation-container, .right__reservation-container {
+        width: 100%;
+    }
+
+    .contact-details {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: 100%;
+    }
+
+    #phone, #email, #location {
+        font-size: 16px;
+    }
+
+    .fa-envelope, .fa-location-dot, .fa-phone {
+        font-size: 50px;
+    }
+
+    .contact-details__container {
+        padding: 20px;
+    }
+
+    // Menu
+
+    .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        padding: 10px;
+        border: $border;
+        border-radius: $border-radius;
+    }
+
+    .card__text {
+        font-family: $header-font-family;
+        color: #502d19;
+        padding-top: 10px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .menu-hero {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+}
+
+//   Phone
+
+@media only screen and (max-width: 600px) {
+
+    // home
+    // Nav
+
+    .body-text,
+    .body-text__bold-text {
+        font-size: 14px;
+    }
+
+    .nav__header__content>a {
+        font-size: 15px;
+    }
+
+    .nav__header__social {
+        display: none;
+    }
+
+    .instagram {
+        display: none;
+    }
+
+    .nav__header__content {
+        width: 80%;
+        margin-right: 40px;
+    }
+
+    #home, #about {
+        display: none;
+    }
+
+    // Main container
+
+    .container {
+        flex-direction: column;
+    }
+
+    
+    .container__image__card {
+        width: 80%;
+    }
+
+    .container__checker-box {
+        padding-left: 5px;
+    }
+
+    // Text header
+
+    .sub-container {
+        width: 80%;
+    }
+
+    .sub-header {
+        font-size: 1.6rem;
+    }
+
+    .sub-header__cover {
+        font-size: 1.6rem;
+    }
+
+    // Home Hero
+
+    .hero {
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__buttons>a {
+        font-size: 10px;
+        padding: 8px;
+    }
+    
+    // Testimonal
+
+    .testimonal__card {
+        width: 100%;
+    }
+
+    .reverse {
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+
+    // Inputs
+
+    .email-input {
+        display: none;
+    }
+
+    .sign-up {
+        display: none;
+    }
+
+    // Footer
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    // end of home
+
+    // reservation
+
+    // hero
+
+    .hero-header, #hero__cover, #hero__drop {
+        font-size: 80px;
+    }
+
+    .reservation-hero {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    // boxes
+
+    .opening-hours__container__text {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        padding: 0px;
+        gap: 30px;
+
+    }
+
+    .hero-header, #hero__cover, #hero__drop {
+        font-size: 60px;
+    }
+
+    .left__reservation-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .opening-hours__sub-container, .reservation__sub-container {
+        margin: 40px;
+        width: 80%;
+    }
+
+    .opening-hours__container {
+        width: 100%;
+    }
+
+    input {
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        margin-left: 30px;
+    }
+
+    .contact-details {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: 100%;
+    }
+
+    #check-availability {
+        width: 80%;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    h4 {
+        padding-left: 30px;
+    }
+    .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+        border: $border;
+        border-radius: $border-radius;
+    }
+
+    .card__text {
+        font-family: $header-font-family;
+        color: #502d19;
+        padding-top: 10px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .menu-hero {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+}

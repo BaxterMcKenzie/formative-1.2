@@ -1,0 +1,57 @@
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__header {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav__header__logo {
+    width: 8%;
+    margin-left: 20px;
+}
+
+
+.nav__header__content {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav__header__content :hover {
+    color: $primary-color;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+    padding: 15px;
+}
+
+.nav__header__content>a {
+    font-family: $header-font-family;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+.nav__header__social {
+    display: flex;
+    gap: 15px;
+    color: $secondary-color;
+    padding: 10px;
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+.instagram {
+    width: 33px;
+}
+
+
+// End of Nav

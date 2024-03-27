@@ -1,0 +1,39 @@
+// Footer start
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: $primary-color;
+}
+
+.footer-logo {
+    width: 180px;
+}
+
+// General
+
+.footer__general>a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: $body-font-family;
+    font-weight: 200;
+    color: $secondary-color;
+}
+
+#general-bold {
+    color: $secondary-color;
+    font-family: $body-font-family;
+    font-weight: 600;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    color: $secondary-color;
+    font-size: 40px;
+    padding: 10px;
+    gap: 10px;
+}

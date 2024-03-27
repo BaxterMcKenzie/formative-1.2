@@ -1,0 +1,1085 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6eee8;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__header {
+  background-color: #861b1b;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav__header__logo {
+  width: 8%;
+  margin-left: 20px;
+}
+
+.nav__header__content {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav__header__content :hover {
+  color: #861b1b;
+  background-color: #e5d8cd;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.nav__header__content > a {
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #e5d8cd;
+}
+
+.nav__header__social {
+  display: flex;
+  gap: 15px;
+  color: #e5d8cd;
+  padding: 10px;
+  font-size: 30px;
+  margin-right: 30px;
+}
+
+.instagram {
+  width: 33px;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../img/Home Hero Image.png");
+  background-size: cover;
+  padding: 200px;
+}
+
+.hero__logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: first baseline;
+}
+
+.hero__buttons > a {
+  text-decoration: none;
+  background-color: #861b1b;
+  color: #e5d8cd;
+  padding: 15px;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5%;
+  gap: 5%;
+}
+
+.container__image__card {
+  width: 30%;
+  height: 500px;
+  border: 2px solid #861b1b;
+  border-radius: 10px;
+  background-image: url(../img/outdoor-view-venue2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 20px;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-top: 30px;
+}
+
+.sub-header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sub-header {
+  display: flex;
+  align-items: first baseline;
+  color: #861b1b;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 4.5rem;
+  margin-top: -35px;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 5px #e5d8cd;
+}
+
+.sub-header__cover {
+  position: absolute;
+  color: #861b1b;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 4.5rem;
+  margin-top: -35px;
+  margin-bottom: 20px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+.body-text {
+  font-family: "Chivo", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 0px 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.body-text__bold-text {
+  font-family: "Chivo", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0px 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.container__checker-box {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+  border: 2px solid #861b1b;
+  border-radius: 10px;
+  background-image: url(../SVG/checkers-green.svg);
+  background-repeat: repeat-y;
+  background-size: 45px;
+  background-position: right;
+}
+
+.container__text {
+  width: 80%;
+}
+
+.testimonal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #861b1b;
+  width: 100%;
+}
+
+.testimonal__header {
+  display: flex;
+  justify-content: center;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 40px;
+  width: 100%;
+  color: #e5d8cd;
+  padding-top: 20px;
+}
+
+.testimonal__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 20px;
+  width: 80%;
+  gap: 5%;
+}
+
+.testimonal__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0px 20px 0px;
+  width: 20%;
+  background-color: #e5d8cd;
+}
+
+.testimonal__card__image__name__container {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.testimonal__card__review__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonal__card__image__container {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 1000px;
+  background-image: url(../img/review-pic1.jpg);
+  background-size: cover;
+  padding: 20px;
+  margin: 5px;
+}
+
+#cassie {
+  background-image: url(../img/review-pic2.jpg);
+}
+
+#john {
+  background-image: url(../img/review-pic3.jpg);
+}
+
+#tommy {
+  background-image: url(../img/review-pic4.jpg);
+}
+
+.testimonal__card__name {
+  font-size: 15px;
+  font-family: "Sansita Swashed", system-ui;
+  color: #861b1b;
+  margin-bottom: 5px;
+}
+
+.testimonal__review__text {
+  font-family: "Chivo", sans-serif;
+  font-size: 12px;
+  margin: 10px;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.fa-star {
+  color: rgb(229, 206, 27);
+}
+
+#where-image {
+  background-image: url(../img/outdoor-view-venue.jpg);
+  margin-top: 30px;
+}
+
+.reverse {
+  background-position: left;
+}
+
+.reverse {
+  padding-left: 5%;
+}
+
+.email-input {
+  position: relative;
+  width: 400px;
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+input {
+  background-color: #e5d8cd;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #861b1b;
+  color: black;
+  width: 400px;
+}
+
+.email-input__button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 7.5%;
+  background-color: #861b1b;
+  border-radius: 50%;
+  border: none;
+  padding: 1px;
+  color: #e5d8cd;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+::-moz-placeholder {
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #861b1b;
+}
+
+.footer-logo {
+  width: 180px;
+}
+
+.footer__general > a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: "Chivo", sans-serif;
+  font-weight: 200;
+  color: #e5d8cd;
+}
+
+#general-bold {
+  color: #e5d8cd;
+  font-family: "Chivo", sans-serif;
+  font-weight: 600;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  color: #e5d8cd;
+  font-size: 40px;
+  padding: 10px;
+  gap: 10px;
+}
+
+#instagram__footer {
+  height: 45px;
+}
+
+.footer__social__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#copright__footer {
+  font-family: "Chivo", sans-serif;
+  color: #e5d8cd;
+}
+
+#sign-up {
+  font-family: "Chivo", sans-serif;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: #e5d8cd;
+}
+
+.email-input__inverse {
+  position: relative;
+  width: 400px;
+  margin-left: 18px;
+}
+
+.input__inverse {
+  background-color: #861b1b;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #e5d8cd;
+  color: #861b1b;
+  width: 400px;
+}
+
+.email-input__button__inverse {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 7.5%;
+  background-color: #e5d8cd;
+  border-radius: 50%;
+  border: none;
+  padding: 1px;
+  color: #861b1b;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#inverted::-moz-placeholder {
+  color: #e5d8cd;
+}
+
+#inverted::placeholder {
+  color: #e5d8cd;
+}
+
+.reservation-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/Reservation checker.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 250px;
+  padding-bottom: 200px;
+}
+
+.reservation-header__container {
+  position: relative;
+}
+
+.hero-header {
+  font-family: "Sansita Swashed", system-ui;
+  color: #861b1b;
+  font-size: 200px;
+  -webkit-text-stroke: 10px #861b1b;
+}
+
+#hero__cover {
+  position: absolute;
+  color: #e5d8cd;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 200px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+#hero__drop {
+  position: absolute;
+  color: #861b1b;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 200px;
+  top: 5px;
+  right: 10px;
+  -webkit-text-stroke: 10px #861b1b;
+}
+
+.reservation-container {
+  display: flex;
+  width: 100%;
+}
+
+.left__reservation-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.opening-hours__sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.opening-hours__container__checker-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+  height: 200px;
+  border: 2px solid #861b1b;
+  border-radius: 10px;
+  background-image: url(../SVG/checkers-green.svg);
+  background-repeat: no-repeat;
+  background-size: 45px;
+}
+
+.opening-hours__container__text {
+  display: flex;
+  font-family: "Sansita Swashed", system-ui;
+  color: #861b1b;
+  font-size: 24px;
+  font-weight: 600;
+  gap: 80px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+
+.reservation__sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.reservation__container__checker-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+  height: 900px;
+  border: 2px solid #861b1b;
+  border-radius: 10px;
+  background-image: url(../SVG/checkers-green.svg);
+  background-repeat: repeat-y;
+  background-size: 45px;
+}
+
+.reservation__container__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Sansita Swashed", system-ui;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  gap: 60px;
+}
+
+#check-availability {
+  font-family: "Sansita Swashed", system-ui;
+  color: #e5d8cd;
+  font-size: 25px;
+  background-color: #861b1b;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #861b1b;
+  width: 300px;
+  margin-top: -30px;
+}
+
+.right__reservation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.reservation__image__container {
+  width: 80%;
+  height: 450px;
+  margin-top: 100px;
+  background-color: #861b1b;
+  border: 2px solid #861b1b;
+  border-radius: 10px;
+}
+
+.reservation__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.contact-details__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+  width: 80%;
+  background-color: #861b1b;
+  border-radius: 10px;
+}
+
+#phone,
+#email,
+#location {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Chivo", sans-serif;
+  font-size: 20px;
+  color: #e5d8cd;
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-location-dot {
+  font-size: 60px;
+  color: #e5d8cd;
+}
+
+.menu-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/menu-hero-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+.menu-header__container {
+  position: relative;
+}
+
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.menu__text {
+  font-family: "Sansita Swashed", system-ui;
+  color: #861b1b;
+  font-size: 50px;
+  padding: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+  width: 90%;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 23%;
+  padding: 10px;
+  border: 2px solid #861b1b;
+  border-radius: 10px;
+}
+
+.image__container {
+  padding: 20px;
+  width: 90%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__text {
+  font-family: "Sansita Swashed", system-ui;
+  color: #502d19;
+  padding-top: 10px;
+  font-size: 28px;
+}
+
+.card__description {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding-top: 20px;
+  font-family: "Chivo", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #502d19;
+}
+
+#badabing {
+  background-image: url(../menu/Pizza/Badabing.webp);
+}
+
+#art-of-pesto {
+  background-image: url(../menu/Pizza/Art\ of\ Pesto.webp);
+}
+
+#santy {
+  background-image: url(../menu/Pizza/Santy.webp);
+}
+
+#pepperoni {
+  background-image: url(../menu/Pizza/Pepperoni\ Pizza.webp);
+}
+
+#mamma-mia {
+  background-image: url(../menu/Pizza/Mamma\ Mia.webp);
+}
+
+#veg-lovers {
+  background-image: url(../menu/Pizza/Vege\ Lover.webp);
+}
+
+#annabelle {
+  background-image: url(../menu/Pizza/Annabelle.webp);
+}
+
+#hawiian-reef {
+  background-image: url(../menu/Pizza/Hawiian\ Reef.webp);
+}
+
+#pizza-bread {
+  background-image: url(../menu/Sides/Pizza\ Bread.webp);
+}
+
+#fries {
+  background-image: url(../menu/Sides/Fries.webp);
+}
+
+#curly-fries {
+  background-image: url(../menu/Sides/Curly\ Fries.webp);
+}
+
+#wedges {
+  background-image: url(../menu/Sides/Wedges.webp);
+}
+
+#kumara-fries {
+  background-image: url(../menu/Sides/Kumara\ Fries.webp);
+}
+
+#camembert {
+  background-image: url(../menu/Sides/Deep\ Fried\ Camembert.webp);
+}
+
+#loaded-fries {
+  background-image: url(../menu/Sides/Loaded\ Fries.webp);
+}
+
+#platter {
+  background-image: url(../menu/Sides/Platter.webp);
+}
+
+#coke {
+  background-image: url(../menu/Drinks/Coke_.webp);
+}
+
+#milkshake {
+  background-image: url(../menu/Drinks/Milkshakes.webp);
+}
+
+#iced-coffee {
+  background-image: url(../menu/Drinks/Iced\ Coffee.webp);
+}
+
+#iced-choc {
+  background-image: url(../menu/Drinks/Iced\ Chocolate.webp);
+}
+
+#green-tea {
+  background-image: url(../menu/Drinks/Green\ Tea.webp);
+}
+
+#english-breakfast {
+  background-image: url(../menu/Drinks/English\ breakfast.webp);
+}
+
+#flat-white {
+  background-image: url(../menu/Drinks/Flat\ white.webp);
+}
+
+#cappuccino {
+  background-image: url(../menu/Drinks/Cappuccino.webp);
+}
+
+#affogato {
+  background-image: url(../menu/Desert/Affogato.webp);
+}
+
+#hazelnut-pizza {
+  background-image: url(../menu/Desert/Hazelnut\ Pizza.webp);
+}
+
+#apple-crumble-pizza {
+  background-image: url(../menu/Desert/Apple\ crumble\ pizza.webp);
+}
+
+#black-forest-pizza {
+  background-image: url(../menu/Desert/Black\ forest\ brownie\ pizza.webp);
+}
+
+#baked-cheesecake {
+  background-image: url(../menu/Desert/New\ York\ Baked\ Cheesecake.webp);
+}
+
+#chocolate-brownie {
+  background-image: url(../menu/Desert/Decadent\ Chocolate\ Brownie.webp);
+}
+
+#new-york-cheesecake {
+  background-image: url(../menu/Desert/New\ York\ Baked\ Cheesecake.webp);
+}
+
+#fudge-brownie {
+  background-image: url(../menu/Desert/Slice\ Chocolate\ Fudge\ Brownie.webp);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav__header__social {
+    display: none;
+  }
+  .instagram {
+    display: none;
+  }
+  .nav__header__content {
+    width: 80%;
+    margin-right: 40px;
+  }
+  .nav__header__content > a {
+    font-size: 20px;
+  }
+  .hero {
+    padding: 100px;
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .sub-container {
+    width: 80%;
+  }
+  .sub-header {
+    font-size: 3rem;
+  }
+  .sub-header__cover {
+    font-size: 3rem;
+  }
+  .container__checker-box {
+    padding-left: 20px;
+  }
+  .container__image__card {
+    width: 80%;
+  }
+  .testimonal__card {
+    width: 40%;
+  }
+  .email-input {
+    display: none;
+  }
+  .body-text,
+  .body-text__bold-text {
+    font-size: 16px;
+  }
+  .hero__buttons > a {
+    font-size: 20px;
+  }
+  .footer-container {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer__social {
+    display: none;
+  }
+  .hero-header, #hero__cover, #hero__drop {
+    font-size: 100px;
+  }
+  .reservation-hero {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .reservation-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .left__reservation-container, .right__reservation-container {
+    width: 100%;
+  }
+  .contact-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+  }
+  #phone, #email, #location {
+    font-size: 16px;
+  }
+  .fa-envelope, .fa-location-dot, .fa-phone {
+    font-size: 50px;
+  }
+  .contact-details__container {
+    padding: 20px;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    padding: 10px;
+    border: 2px solid #861b1b;
+    border-radius: 10px;
+  }
+  .card__text {
+    font-family: "Sansita Swashed", system-ui;
+    color: #502d19;
+    padding-top: 10px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .menu-hero {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .body-text,
+  .body-text__bold-text {
+    font-size: 14px;
+  }
+  .nav__header__content > a {
+    font-size: 15px;
+  }
+  .nav__header__social {
+    display: none;
+  }
+  .instagram {
+    display: none;
+  }
+  .nav__header__content {
+    width: 80%;
+    margin-right: 40px;
+  }
+  #home, #about {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container__image__card {
+    width: 80%;
+  }
+  .container__checker-box {
+    padding-left: 5px;
+  }
+  .sub-container {
+    width: 80%;
+  }
+  .sub-header {
+    font-size: 1.6rem;
+  }
+  .sub-header__cover {
+    font-size: 1.6rem;
+  }
+  .hero {
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__buttons > a {
+    font-size: 10px;
+    padding: 8px;
+  }
+  .testimonal__card {
+    width: 100%;
+  }
+  .reverse {
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+  .email-input {
+    display: none;
+  }
+  .sign-up {
+    display: none;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .hero-header, #hero__cover, #hero__drop {
+    font-size: 80px;
+  }
+  .reservation-hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .opening-hours__container__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 0px;
+    gap: 30px;
+  }
+  .hero-header, #hero__cover, #hero__drop {
+    font-size: 60px;
+  }
+  .left__reservation-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .opening-hours__sub-container, .reservation__sub-container {
+    margin: 40px;
+    width: 80%;
+  }
+  .opening-hours__container {
+    width: 100%;
+  }
+  input {
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin-left: 30px;
+  }
+  .contact-details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+  }
+  #check-availability {
+    width: 80%;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  h4 {
+    padding-left: 30px;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #861b1b;
+    border-radius: 10px;
+  }
+  .card__text {
+    font-family: "Sansita Swashed", system-ui;
+    color: #502d19;
+    padding-top: 10px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .menu-hero {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+}/*# sourceMappingURL=styles.css.map */

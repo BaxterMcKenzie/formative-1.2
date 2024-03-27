@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+// CSS Reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'varibles';
+
+body {
+    background-color: $background-color;
+}
+
+@import 'nav';
+
+// Hero header
+
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../img/Home\ Hero\ Image.png");
+    background-size: cover;
+    padding: 200px;
+}
+
+.hero__logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: first baseline;
+}
+
+.hero__buttons>a {
+    text-decoration: none;
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 15px;
+    font-family: $header-font-family;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px;
+    border-radius: $border-radius;
+    width: 40%;
+}
+
+// Mission Statement
+
+// Main container
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+    gap: 5%;
+}
+
+// Mission Statement image container
+
+.container__image__card {
+    width: 30%;
+    height: 500px;
+    border: 2px solid $primary-color;
+    border-radius: $border-radius;
+    background-image: url(../img/outdoor-view-venue2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+}
+
+// Misson statement image end
+
+// Missison statement text box
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 30px;
+}
+
+.sub-header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sub-header {
+    display: flex;
+    align-items: first baseline;
+    color: $primary-color;
+    font-family: $header-font-family;
+    font-size: 4.5rem;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 5px $secondary-color;
+}
+
+.sub-header__cover {
+    position: absolute;
+    color: $primary-color;
+    font-family: $header-font-family;
+    font-size: 4.5rem;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.body-text {
+    font-family: $body-font-family;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0px 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.body-text__bold-text {
+    font-family: $body-font-family;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0px 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.container__checker-box {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+    border: $border;
+    border-radius: $border-radius;
+    background-image: url(../SVG/checkers-green.svg);
+    background-repeat: repeat-y;
+    background-size: 45px;
+    background-position: right;
+}
+
+.container__text {
+    width: 80%;
+}
+
+// Mission Statement end
+
+// testimonals
+
+.testimonal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $primary-color;
+    width: 100%;
+}
+
+.testimonal__header {
+    display: flex;
+    justify-content: center;
+    font-family: $header-font-family;
+    font-size: 40px;
+    width: 100%;
+    color: $secondary-color;
+    padding-top: 20px;
+}
+
+// Testimonal Card
+
+.testimonal__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    width: 80%;
+    gap: 5%;
+}
+
+.testimonal__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: $border-radius;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    width: 20%;
+    background-color: $secondary-color;
+}
+
+.testimonal__card__image__name__container {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.testimonal__card__review__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonal__card__image__container {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 1000px;
+    background-image: url(../img/review-pic1.jpg);
+    background-size: cover;
+    padding: 20px;
+    margin: 5px;
+}
+
+#cassie {
+    background-image: url(../img/review-pic2.jpg);
+}
+
+#john {
+    background-image: url(../img/review-pic3.jpg);
+}
+
+#tommy{
+    background-image: url(../img/review-pic4.jpg);
+}
+
+
+.testimonal__card__name {
+    font-size: 15px;
+    font-family: $header-font-family;
+    color: $primary-color;
+    margin-bottom: 5px;
+}
+
+.testimonal__review__text {
+    font-family: $body-font-family;
+    font-size: 12px;
+    margin: 10px;
+}
+
+.date {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.fa-star {
+    color: rgb(229, 206, 27);
+}
+
+// End of Testimonal
+
+// Start of where can you find us
+
+#where-image {
+    background-image: url(../img/outdoor-view-venue.jpg);
+    margin-top: 30px;
+}
+
+.reverse {
+    background-position: left;
+
+}
+
+.reverse {
+    padding-left: 5%;
+}
+
+// form
+
+.email-input {
+    position: relative;
+    width: 400px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+input {
+    background-color: $secondary-color;
+    padding: 10px;
+    border-radius: $border-radius;
+    border: $border;
+    color: black;
+    width: 400px;
+}
+
+.email-input__button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 7.5%;
+    background-color: $primary-color;
+    border-radius: 50%;
+    border: none;
+    padding: 1px;
+    color: $secondary-color;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: black;
+}
+
+// Where to find us end
+
+@import 'footer';
+
+// Socail & Copyright
+
+#instagram__footer {
+    height: 45px;
+}
+
+.footer__social__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#copright__footer {
+    font-family: $body-font-family;
+    color: $secondary-color;
+}
+
+
+#sign-up {
+    font-family: $body-font-family;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: $secondary-color;
+}
+
+.email-input__inverse {
+    position: relative;
+    width: 400px;
+    margin-left: 18px;
+}
+
+.input__inverse {
+    background-color: $primary-color;
+    padding: 10px;
+    border-radius: $border-radius;
+    border: 2px solid $secondary-color;
+    color: $primary-color;
+    width: 400px;
+}
+
+.email-input__button__inverse {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 7.5%;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    border: none;
+    padding: 1px;
+    color: $primary-color;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#inverted::placeholder {
+    color: $secondary-color;
+}
+
+
+//  End of Footer
+
+// reservation
+
+// reservation Hero
+
+
+.reservation-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Reservation\ checker.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    padding-bottom: 200px;
+}
+
+.reservation-header__container {
+    position: relative;
+}
+
+.hero-header {
+    font-family: $header-font-family;
+    color: $primary-color;
+    font-size: 200px;
+    -webkit-text-stroke: 10px $primary-color;
+}
+
+
+#hero__cover {
+    position: absolute;
+    color: $secondary-color;
+    font-family: $header-font-family;
+    font-size: 200px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+#hero__drop {
+    position: absolute;
+    color: $primary-color;
+    font-family: $header-font-family;
+    font-size: 200px;
+    top: 5px;
+    right: 10px;
+    -webkit-text-stroke: 10px $primary-color;
+}
+
+// Reservation Container
+
+.reservation-container {
+    display: flex;
+    width: 100%;
+}
+
+// Left Container
+// opening hours
+
+.left__reservation-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+// Opening Hours Box
+
+.opening-hours__sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.opening-hours__container__checker-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+    height: 200px;
+    border: $border;
+    border-radius: $border-radius;
+    background-image: url(../SVG/checkers-green.svg);
+    background-repeat: no-repeat;
+    background-size: 45px;
+}
+
+.opening-hours__container__text {
+    display: flex;
+    font-family: $header-font-family;
+    color: $primary-color;
+    font-size: 24px;
+    font-weight: 600;
+    gap: 80px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+
+// Left Container
+// Reservation start
+
+.reservation__sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.reservation__container__checker-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+    height: 900px;
+    border: $border;
+    border-radius: $border-radius;
+    background-image: url(../SVG/checkers-green.svg);
+    background-repeat: repeat-y;
+    background-size: 45px;
+}
+
+.reservation__container__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $header-font-family;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    gap: 60px;
+}
+
+#check-availability {
+    font-family: $header-font-family;
+    color: $secondary-color;
+    font-size: 25px;
+    background-color: $primary-color;
+    padding: 10px;
+    border-radius: $border-radius;
+    border: $border;
+    width: 300px;
+    margin-top: -30px;
+}
+
+//  reservation end
+
+// Right Container
+
+.right__reservation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.reservation__image__container {
+    width: 80%;
+    height: 450px;
+    margin-top: 100px;
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: $border-radius;
+}
+
+.reservation__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: $border-radius;
+}
+
+// End of reservation images
+
+// contact
+
+.contact-details__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 80%;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+}
+
+#phone,
+#email,
+#location {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: $body-font-family;
+    font-size: 20px;
+    color: $secondary-color;
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-location-dot {
+    font-size: 60px;
+    color: $secondary-color;
+}
+
+// End of coantact
+
+
+// Start of Menu
+
+.menu-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/menu-hero-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.menu-header__container {
+    position: relative;
+}
+
+
+// End of Menu Hero
+
+// Start of Pizza Menu
+
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.menu__text {
+    font-family: $header-font-family;
+    color: $primary-color;
+    font-size: 50px;
+    padding: 30px;
+}
+
+// Menu items
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    width: 90%;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 23%;
+    padding: 10px;
+    border: $border;
+    border-radius: $border-radius;
+}
+
+.image__container {
+    padding: 20px;
+    width: 90%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card__text {
+    font-family: $header-font-family;
+    color: #502d19;
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+.card__description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 20px;
+    font-family: $body-font-family;
+    font-size: 20px;
+    text-align: center;
+    color: #502d19;
+}
+
+@import 'menu-images';
+
+
+
+// End of Pizza Menu
+
+//  Media Queires
+
+@import '_media-queries';
